@@ -1,6 +1,13 @@
 import random
 import time
-from colorama import Fore
+import sys
+try:
+    from colorama import Fore
+except:
+    print("Sorry, it seems you haven't install the required packeges")
+    print("Run : ")
+    print("\t pip install colorama")
+    sys.exit()
 import normal
 
 normal.printBrand("Number Guessing Game")
